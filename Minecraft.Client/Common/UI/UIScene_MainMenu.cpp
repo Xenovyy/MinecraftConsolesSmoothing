@@ -343,10 +343,10 @@ void UIScene_MainMenu::handlePress(F64 controlId, F64 childId)
 		UINT uiIDA[1];
 		uiIDA[0]=IDS_OK;
 		ui.RequestErrorMessage(IDS_FEATURENOTIMPLEMENTED_TITLE, IDS_FEATURENOTIMPLEMENTED_TEXT, uiIDA, 1);
+		ui.PlayUISFX(eSFX_Press);
 
 		//CD - Added for audio
 		// COMMENTED OUT FOR NOW AS ACHIEVEMENTS ARE YET TO BE IMPLEMENTED.
-		//ui.PlayUISFX(eSFX_Press);
 
 		//m_eAction=eAction_RunAchievements;
 		//signInReturnedFunc = &UIScene_MainMenu::Achievements_SignInReturned;
