@@ -8814,4 +8814,10 @@ All Ender Chests in a world are linked. Items placed into an Ender Chest are acc
 	<data name="IDS_WINDOWS_EXIT">
 		<value>Exit Minecraft</value>
 	</data>	
+	<data name="IDS_FEATURENOTIMPLEMENTED_TEXT">
+		<value>This feature isn't fully supported at the moment.</value>
+	</data>	
+	<data name="IDS_FEATURENOTIMPLEMENTED_TITLE">
+		<value>Feature Coming Soon.</value>
+	</data>	
 </root>
