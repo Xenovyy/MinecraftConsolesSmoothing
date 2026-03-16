@@ -492,7 +492,8 @@ void UIScene_LeaderboardsMenu::ReadStats(int startIndex)
 	}
 
 	//Show the loading message
-	m_labelInfo.setLabel(app.GetString(IDS_LEADERBOARD_LOADING));
+	//IDS_LEADERBOARD_LOADING < -- REPLACE WITH THIS WHEN WE HAVE A LEADERBOARD
+	m_labelInfo.setLabel(app.GetString(IDS_FEATURENOTIMPLEMENTED_TEXT));
 	m_labelInfo.setVisible(true);
 }
 
