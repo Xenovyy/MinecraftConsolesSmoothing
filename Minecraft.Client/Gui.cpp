@@ -1175,13 +1175,13 @@ void Gui::render(float a, bool mouseFree, int xMouse, int yMouse)
         }
 #endif
 
-        int yPos = debugTop;
-        for (const auto &line : lines)
-        {
-            drawString(font, line, debugLeft, yPos, 0xffffff);
-            yPos += 10;
-        }
-
+		int yPos = debugTop;
+		for (const auto& line : lines)
+		{
+			fill(debugLeft - 1, yPos - 1, debugLeft + font->width(line) + 1, yPos + 8 + 1, 0x80303030, true);
+			drawString(font, line, debugLeft, yPos, 0xffffff);
+			yPos += 10;
+		}
         glMatrixMode(GL_MODELVIEW);
         glPopMatrix();
         glMatrixMode(GL_PROJECTION);
