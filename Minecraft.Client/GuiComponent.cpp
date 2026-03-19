@@ -24,7 +24,7 @@ void GuiComponent::vLine(int x, int y0, int y1, int col)
     fill(x, y0 + 1, x + 1, y1, col);
 }
 
-void GuiComponent::fill(int x0, int y0, int x1, int y1, int col, bool blend)
+void GuiComponent::fill(int x0, int y0, int x1, int y1, int col)
 {
     if (x0 < x1)
 	{
@@ -54,9 +54,7 @@ void GuiComponent::fill(int x0, int y0, int x1, int y1, int col, bool blend)
     t->vertex(static_cast<float>(x0), static_cast<float>(y0), static_cast<float>(0));
     t->end();
     glEnable(GL_TEXTURE_2D);
-    if (blend == false) {
-        glDisable(GL_BLEND);
-	}
+    glDisable(GL_BLEND);
 }
 
 void GuiComponent::fillGradient(int x0, int y0, int x1, int y1, int col1, int col2)
