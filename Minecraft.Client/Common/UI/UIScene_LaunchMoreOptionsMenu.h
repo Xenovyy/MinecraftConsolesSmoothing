@@ -42,7 +42,7 @@ private:
 		eControl_Count
 	};
 
-#ifdef __PSVITA__
+#ifdef __PSVITA__tab
 	enum ETouchInput
 	{
 		ETouchInput_TabWorld = eControl_Count,
@@ -142,6 +142,7 @@ public:
 	virtual void handleDestroy();
 #ifdef _WINDOWS64
 	virtual void getDirectEditInputs(vector<UIControl_TextInput*> &inputs);
+	virtual bool handleMouseClick(F32 x, F32 y);
 	virtual void onDirectEditFinished(UIControl_TextInput *input, UIControl_TextInput::EDirectEditResult result);
 #endif
 	// INPUT
