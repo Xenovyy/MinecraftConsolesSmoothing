@@ -42,7 +42,7 @@ private:
 		eControl_Count
 	};
 
-#ifdef __PSVITA__tab
+#ifdef __PSVITA__
 	enum ETouchInput
 	{
 		ETouchInput_TabWorld = eControl_Count,
